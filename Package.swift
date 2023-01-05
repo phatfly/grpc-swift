@@ -444,7 +444,7 @@ let package = Package(
   name: "grpc-swift",
   platforms: [
       .macOS(.v10_15), .iOS(.v13)
-    ]
+    ],
   products: [
     .grpc,
     .cgrpcZlib,
