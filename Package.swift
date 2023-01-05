@@ -441,12 +441,12 @@ extension Product {
 // MARK: - Package
 
 let package = Package(
-  name: grpcPackageName,
+  name: "grpc-swift",
   platforms: [
       .macOS(.v10_15), .iOS(.v13)
     ]
   products: [
-    .library(name: "GRPC", targets: [GRPC]),
+    .grpc,
     .cgrpcZlib,
     .protocGenGRPCSwift,
     .grpcSwiftPlugin,
@@ -454,7 +454,7 @@ let package = Package(
   dependencies: packageDependencies,
   targets: [
     // Products
-    .library(name: "GRPC", targets: [GRPC]),
+    .grpc,
     .cgrpcZlib,
     .protocGenGRPCSwift,
     .grpcSwiftPlugin,
