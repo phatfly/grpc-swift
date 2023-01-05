@@ -446,7 +446,7 @@ let package = Package(
       .macOS(.v10_15), .iOS(.v13)
     ]
   products: [
-    .grpc,
+    .library(name: "GRPC", targets: [GRPC]),
     .cgrpcZlib,
     .protocGenGRPCSwift,
     .grpcSwiftPlugin,
