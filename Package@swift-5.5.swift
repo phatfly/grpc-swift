@@ -47,7 +47,6 @@ let packageDependencies: [Package.Dependency] = [
     from: "1.4.0"
   ),
   .package(
-    name: "SwiftProtobuf",
     url: "https://github.com/apple/swift-protobuf.git",
     "1.20.2"..<"1.20.3"
   ),
