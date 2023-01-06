@@ -108,7 +108,7 @@ extension Target.Dependency {
     package: "swift-nio-transport-services"
   )
   static let logging: Self = .product(name: "Logging", package: "swift-log")
-  static let protobuf: Self = .product(name: "SwiftProtobuf", package: "SwiftProtobuf")
+  static let protobuf: Self = .product(name: "SwiftProtobuf", package: "swift-protobuf")
   static let protobufPluginLibrary: Self = .product(
     name: "SwiftProtobufPluginLibrary",
     package: "SwiftProtobuf"
